@@ -1,0 +1,19 @@
+.calculator{
+    border: solid;
+    border-radius: 5px;
+    margin:40px 60px;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(95 173 130 / 50%);
+    border-color:green;
+}
+
+.col{
+     border: solid 8px;
+     border-radius: 5px;
+     margin: 10px;
+     padding: 10px;
+     background-color: rgb(95 173 91 / 50%);
+     border-color:white;
+     text-align: center;
+}
