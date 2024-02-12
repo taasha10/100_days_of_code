@@ -8,14 +8,12 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous"/>
     <link href="index.css" rel="stylesheet"/>
-    <script src="index.js"></script>
 </head>
 <body>
     <h1>Simple Calculator Webapp</h1>
     <div class="calculator">
         <!--  display keys 4*5   -->
         <div>
-            <form id="calculator-form" action="index.js" method="post">
                 <div class="row">
                     <div class="col">
                         <input type="text" placeholder="enter here" id="id-display"/>
@@ -23,41 +21,41 @@
                 </div>
                 <!--   display row 1     -->
                 <div class="row">
-                    <button class="col" id="id-/" value="/">/</button>
-                    <button class="col" id="id-(" value="(">(</button>
-                    <button class="col" id="id-)" value=")">)</button>
-                    <button class="col" id="id-clear-all">Clear All</button>
+                    <button class="col" id="id-/" value="/" onclick="readInput('/')">/</button>
+                    <button class="col" id="id-(" value="(" onclick="readInput('(')">(</button>
+                    <button class="col" id="id-)" value=")" onclick="readInput(')')">)</button>
+                    <button class="col" id="id-clear-all" onclick="readInput('clr-all')">Clear All</button>
                 </div>
                 <!--   display row 2     -->
                 <div class="row">
-                    <button class="col" id="id-*" value="*">*</button>
-                    <button class="col" id="id-1" value="1">1</button>
-                    <button class="col" id="id-2" value="2">2</button>
-                    <button class="col" id="id-3" value="3">3</button>
+                    <button class="col" id="id-*" value="*" onclick="readInput('*')">*</button>
+                    <button class="col" id="id-1" value="1" onclick="readInput('1')">1</button>
+                    <button class="col" id="id-2" value="2" onclick="readInput('2')">2</button>
+                    <button class="col" id="id-3" value="3" onclick="readInput('3')">3</button>
                 </div>
                 <!--   display row 3     -->
                 <div class="row">
-                    <button class="col" id="id-+" value="+">+</button>
-                    <button class="col" id="id-4" value="4">4</button>
-                    <button class="col" id="id-5" value="5">5</button>
-                    <button class="col" id="id-6" value="6">6</button>
+                    <button class="col" id="id-+" value="+" onclick="readInput('+')">+</button>
+                    <button class="col" id="id-4" value="4" onclick="readInput('4')">4</button>
+                    <button class="col" id="id-5" value="5" onclick="readInput('5')">5</button>
+                    <button class="col" id="id-6" value="6" onclick="readInput('6')">6</button>
                 </div>
                 <!--   display row 4     -->
                 <div class="row">
-                    <button class="col" id="id--" value="-">-</button>
-                    <button class="col" id="id-7" value="7">7</button>
-                    <button class="col" id="id-8" value="8">8</button>
-                    <button class="col" id="id-9" value="9">9</button>
+                    <button class="col" id="id--" value="-" onclick="readInput('-')">-</button>
+                    <button class="col" id="id-7" value="7" onclick="readInput('7')">7</button>
+                    <button class="col" id="id-8" value="8" onclick="readInput('8')">8</button>
+                    <button class="col" id="id-9" value="9" onclick="readInput('9')">9</button>
                 </div>
                 <!--   display row 5     -->
                 <div class="row">
-                    <button class="col" id="id-del" value="del">Del</button>
-                    <button class="col" id="id-0" value="0">0</button>
-                    <button class="col" id="id-=" value="=">=</button>
+                    <button class="col" id="id-del" value="del" onclick="readInput('del')">Del</button>
+                    <button class="col" id="id-0" value="0" onclick="readInput('0')">0</button>
+                    <button class="col" id="id-=" value="=" onclick="readInput('=')">=</button>
                 </div>
-            </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
